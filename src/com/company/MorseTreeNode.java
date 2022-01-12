@@ -5,14 +5,14 @@ public class MorseTreeNode {
     public MorseTreeNode dot;
     public MorseTreeNode dash;
 
-    public MorseTreeNode(int data){
+    public MorseTreeNode(char data){
         this.data = data;
-        this.left = null;
-        this.right = null;
+        this.dot = null;
+        this.dash = null;
     }
-    public MorseTreeNode(int data,IntTreeNode left, IntTreeNode right){
+    public MorseTreeNode(char data,MorseTreeNode left, MorseTreeNode right){
         this.data = data;
-        this.left = left;
-        this.right = right;
+        this.dot = left;
+        this.dash = right;
     }
 }
